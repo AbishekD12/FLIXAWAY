@@ -50,3 +50,4 @@ This project was built to show how powerful and beautiful native macOS apps can 
 
 ---
 *Created by ABISHEK. Because I was bored and streaming websites suck.*
+# FLIXAWAY
