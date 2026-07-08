@@ -101,6 +101,12 @@ struct VidSrcWebView: NSViewRepresentable {
             } else {
                 urlString = "https://www.vidking.net/embed/movie/\(item.id)?color=e50914&autoPlay=true"
             }
+        } else if server == "Nxsha (Alternative)" {
+            if item.mediaType == "tv" {
+                urlString = "https://web.nxsha.app/embed/tv/\(item.id)/\(season)/\(episode)"
+            } else {
+                urlString = "https://web.nxsha.app/embed/movie/\(item.id)"
+            }
         } else if server == "VidFast (Secondary)" {
             if item.mediaType == "tv" {
                 urlString = "https://vidfast.pro/tv/\(item.id)/\(season)/\(episode)"
@@ -117,7 +123,7 @@ struct VidSrcWebView: NSViewRepresentable {
         }
         
         if let url = URL(string: urlString) {
-            if server == "VidKing (Primary)" {
+            if server == "VidKing (Primary)" || server == "Nxsha (Alternative)" {
                 let html = """
                 <!DOCTYPE html>
                 <html>

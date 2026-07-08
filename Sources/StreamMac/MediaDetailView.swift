@@ -15,7 +15,7 @@ struct MediaDetailView: View {
     @State private var episodeToPlay: Int
     
     @State private var selectedServer: String = "VidKing (Primary)"
-    let servers = ["VidKing (Primary)", "VidFast (Secondary)", "VidSrc (Fallback)"]
+    let servers = ["VidKing (Primary)", "Nxsha (Alternative)", "VidFast (Secondary)", "VidSrc (Fallback)"]
     
     init(item: MediaItem, initialSeason: Int? = nil, initialEpisode: Int? = nil) {
         self.item = item
